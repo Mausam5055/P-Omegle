@@ -1,41 +1,33 @@
 <div align="center">
 
-<h1>
-  <img src="https://img.shields.io/badge/P--Omegle-Random%20Video%20Chat-6C63FF?style=for-the-badge&logo=webrtc&logoColor=white" alt="P-Omegle" height="50"/>
-</h1>
+# 🎥 O P Omegle (P-Omegle)
 
 <p align="center">
-  <strong>A modern, privacy-first, open-source Random Video & Text Chat Platform</strong><br/>
-  <em>Built with WebRTC · React 19 · Node.js · Express · WebSockets</em>
+  <strong>Next-Generation, Privacy-First, Open-Source Random Video & Anonymous Text Chat</strong><br/>
+  <em>Engineered with Pure P2P WebRTC · React 19 · Node.js · Express · WebSockets · Handcrafted Vector Doodles</em>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=flat-square" alt="Status"/>
-  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square" alt="Version"/>
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License"/>
-  <img src="https://img.shields.io/badge/Node.js-24.x-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/React-19.x-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
-  <img src="https://img.shields.io/badge/Vite-8.x-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
-  <img src="https://img.shields.io/badge/WebRTC-Peer--to--Peer-orange?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/>
-  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Redis-7.x-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-16.x-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/Code%20Style-OxLint-FF6600?style=flat-square" alt="OxLint"/>
-  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome"/>
+  <a href="https://github.com/Mausam5055/P-Omegle/releases"><img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=semantic-release&logoColor=white" alt="Version 1.0.0"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="MIT License"/></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=000000" alt="React 19"/></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-24.x-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js 24"/></a>
+  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-8.3-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 8"/></a>
+  <a href="https://webrtc.org/"><img src="https://img.shields.io/badge/WebRTC-P2P%20Encrypted-FF5722?style=for-the-badge&logo=webrtc&logoColor=white" alt="WebRTC P2P"/></a>
+  <a href="https://web.dev/progressive-web-apps/"><img src="https://img.shields.io/badge/PWA-Installable-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA Ready"/></a>
+  <a href="https://github.com/Mausam5055/P-Omegle/actions"><img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white" alt="Build Status"/></a>
 </p>
 
 <p align="center">
   <a href="#-overview">Overview</a> •
-  <a href="#-features">Features</a> •
+  <a href="#-key-features">Key Features</a> •
   <a href="#-architecture">Architecture</a> •
   <a href="#-tech-stack">Tech Stack</a> •
   <a href="#-folder-structure">Folder Structure</a> •
   <a href="#-getting-started">Getting Started</a> •
-  <a href="#-docker-deployment">Docker</a> •
-  <a href="#-environment-variables">Environment Variables</a> •
-  <a href="#-api-reference">API Reference</a> •
   <a href="#-websocket-events">WebSocket Events</a> •
-  <a href="#-contributing">Contributing</a> •
+  <a href="#-production--deployment">Deployment</a> •
+  <a href="#-security--privacy">Security</a> •
   <a href="#-license">License</a>
 </p>
 
@@ -45,81 +37,45 @@
 
 ## 📖 Overview
 
-**P-Omegle** is a high-performance, full-stack random video and text chat platform that connects two strangers peer-to-peer in real time using the [WebRTC](https://webrtc.org/) standard. Inspired by Omegle, it is re-engineered from the ground up with a modern microservice-style backend, robust matchmaking engine, built-in safety/moderation tools, reconnection grace periods, and a premium React-based SPA frontend.
+**O P Omegle** is a modern, high-performance web platform that pairs two strangers in real-time encrypted video and text conversations without intermediaries, data harvesting, or mandatory registrations.
 
-> 💡 **No plugin required.** P-Omegle runs entirely in the browser using native WebRTC APIs and WebSocket signaling — no Flash, no Java, no third-party media servers.
+Re-engineered from first principles to overcome the legacy architectural flaws of early-2000s chat platforms, O P Omegle combines **pure Peer-to-Peer WebRTC media streaming**, an **asynchronous WebSocket matchmaking gateway**, and a **clean handcrafted doodle aesthetic** inspired by minimalist Open Peeps illustrations.
 
-### Why P-Omegle?
+### 💡 Why O P Omegle?
 
-| Problem with Legacy Platforms | P-Omegle Solution |
-|---|---|
-| Centralized media routing (slow, expensive) | True P2P via WebRTC — no media proxy |
-| No reconnection after brief drop | 15-second grace period with automatic session restore |
-| No interest-based matching | Interest-tag matchmaking with language preference |
-| Poor moderation tooling | Built-in moderator dashboard, report & ban system |
-| Monolithic, hard to scale | Discrete microservice-style services per domain |
-| No auth or persistent identity | JWT-based optional auth with anonymous guest support |
+| Legacy Chat Platforms (e.g., Old Omegle) | O P Omegle Solution |
+|:---|:---|
+| ❌ Centralized media servers (high latency, costly bandwidth) | ✅ **True P2P Media**: Video and audio stream directly between peer browsers |
+| ❌ Immediate call drops on minor network packet jitter | ✅ **15-Second Grace Window**: Automatically restores session on brief disconnects |
+| ❌ Zero common-ground matching (purely random) | ✅ **Interest-Based Tag Filtering**: Connect by shared passions (`#tech`, `#design`, etc.) |
+| ❌ Primitive UI with distracting, clunky layouts | ✅ **Handcrafted Doodle Aesthetic**: Crisp ink boundaries, zero AI-slop gradients |
+| ❌ No in-call multitasking | ✅ **Non-Intrusive Chat Drawer**: In-call text messages without obscuring the live stream |
+| ❌ Cluttered with paywalls and forced "Pro" upsells | ✅ **100% Free & Open**: Zero paywalls, zero locked tiers, zero trackers |
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### 🎥 Core Chat
+### 🎥 Live Video & WebRTC Media
+- **Direct P2P Video & Audio**: Ultra-low latency camera and microphone streaming via browser-native WebRTC.
+- **Hardware Camera Flipping**: One-tap toggle between user-facing selfie camera and environment-facing rear lens on mobile devices.
+- **Smart Autoplay Fallback**: Automatically recovers from strict browser autoplay policies with seamless gesture listeners.
+- **Dual Responsive Grid**: Side-by-side viewfinder on desktop; stacked single-plane views on mobile with zero clumsy borders or dark overlaps.
 
-| Feature | Description |
-|---|---|
-| **Random Video Chat** | Instant P2P video via WebRTC with camera/mic controls |
-| **Random Text Chat (Convoo mode)** | Text-only chat with a fully styled chat interface |
-| **Interest-Based Matching** | Tag your interests; get matched with like-minded strangers |
-| **Language Preference** | Filter matches by your preferred language |
-| **Skip & Next** | Instantly skip to the next stranger with optional auto-requeue |
+### 💬 In-Call Realtime Chat Drawer
+- **Docked Sliding Drawer**: Real-time text messaging alongside the live video call without viewport disruption.
+- **Live Connection Telemetry**: Real-time status indicators (`Connected live` with green pulse, `Connecting...`, `Stranger disconnected`, or `User not connected`).
+- **Emoji Palette & Typing Indicators**: Integrated emoji keyboard and live `stranger is typing...` status.
+- **Unread Message Notifications**: Vibrantly animated green pulse badge in the navbar and floating incoming message preview banners with quick-reply.
 
-### 🔌 Real-Time Infrastructure
+### 🎨 Handcrafted Doodle Design System
+- **5 Distinct Vector Doodle Avatars**: Choose between Beanie, Glasses, Snapback Cap, Fluffy Afro, and DJ Headphones — razor-sharp vector SVGs that scale cleanly without pixelation.
+- **Subtle Texture Overlays**: Hand-drawn doodle pattern backgrounds applied with subtle blur for maximum readability.
+- **Instant Navbar & Profile Sync**: Local profile updates instantly synchronize across the navbar, lobby, and session state without page reloads.
 
-| Feature | Description |
-|---|---|
-| **WebSocket Gateway** | Persistent, low-latency bidirectional messaging over `/ws` |
-| **WebRTC Signaling Relay** | Offer / Answer / ICE candidate forwarding between peers |
-| **In-Call Chat Drawer** | Live text messages during a video session without interruption |
-| **Typing Indicators** | Real-time `typing_start` / `typing_stop` events to both peers |
-| **Heartbeat & Presence** | Periodic health checks and online presence tracking |
-
-### 🛡️ Safety & Moderation
-
-| Feature | Description |
-|---|---|
-| **Report System** | Users can report partners with reason categorization |
-| **Block List** | Prevents blocked users from ever being re-matched |
-| **Moderator Dashboard** | Dedicated UI for reviewing reports, suspending/banning users |
-| **Rate Limiter** | Per-IP request throttling on all REST and WebSocket endpoints |
-| **Age Verification** | Registration enforces age ≥ 18 |
-
-### 🔐 Identity & Auth
-
-| Feature | Description |
-|---|---|
-| **Optional Authentication** | JWT access tokens (24 h) with refresh tokens (7 d) |
-| **Anonymous Guest Mode** | Participate without an account — guest IDs auto-generated |
-| **Secure Password Hashing** | `bcryptjs` used for all credential storage |
-| **Token-Gated WebSocket** | Authenticated sessions carry richer profile data |
-
-### ♻️ Resilience
-
-| Feature | Description |
-|---|---|
-| **Reconnection Grace Period** | 15-second window to restore a dropped session transparently |
-| **Graceful Shutdown** | SIGTERM / SIGINT handling with full connection draining |
-| **In-Memory Fallback** | Operates without Redis / PostgreSQL for frictionless local dev |
-
-### 🎨 Frontend Experience
-
-| Feature | Description |
-|---|---|
-| **Lobby & Video Stage** | Distinct views for waiting queue and active call states |
-| **Device Settings Modal** | Switch camera / microphone at any point mid-session |
-| **Doodle Pad** | Collaborative drawing canvas available during a chat session |
-| **Sound Effects** | Subtle audio feedback for match, connect, and disconnect events |
-| **Fully Responsive** | Mobile-first CSS design that adapts to any screen size |
+### 📱 Progressive Web App (PWA)
+- **Installable Native App Experience**: Includes full Web App Manifest and offline caching Service Worker (`sw.js`).
+- **PWA Floating Install Banner**: Native install prompt for Chrome, Edge, and iOS Safari ("Add to Home Screen").
 
 ---
 
@@ -222,121 +178,38 @@ sequenceDiagram
     SR-->>GW: forward to peerA
     GW-->>A: answer {sdp}
 
-    loop ICE Candidates
-        A->>GW: ice_candidate {candidate, sessionId}
-        GW-->>B: ice_candidate {candidate}
-        B->>GW: ice_candidate {candidate, sessionId}
-        GW-->>A: ice_candidate {candidate}
-    end
+    A->>GW: ice_candidate {candidate}
+    GW->>SR: processSignal(candidate)
+    SR-->>GW: forward to peerB
+    GW-->>B: ice_candidate
 
-    Note over A,B: P2P Media Established
-
-    A->>GW: skip {sessionId, autoRequeue: true}
-    GW->>SM: skipSession(sessionId, peerA)
-    SM-->>GW: SessionEnded partnerID=peerB
-    GW-->>B: partner_left {reason}
-    GW-->>A: session_ended {skipped: true}
-    GW->>MM: joinQueue(peerA) auto-requeue
+    Note over A,B: Direct P2P Media Connected
 ```
 
 ---
 
-### Reconnection Grace Period Flow
+## 💻 Tech Stack
 
-```mermaid
-flowchart LR
-    DC["Peer Disconnects\nsocket close"]
-    GP["15-Second\nGrace Period Starts"]
-    CHK{"Reconnected\nbefore timeout?"}
-    YES["Reconnect\nHandled"]
-    NO["Session Ended\nPartner Notified"]
-    RESTORE["session_restored\nevent sent to peer"]
-    NOTIFY["partner_left\nevent to partner"]
+### Frontend Architecture
+| Layer | Technology | Description |
+|:---|:---|:---|
+| **Framework** | <img src="https://img.shields.io/badge/React-19.0-61DAFB?style=flat-square&logo=react&logoColor=black"/> | Latest React 19 functional architecture with custom hooks |
+| **Build Tool** | <img src="https://img.shields.io/badge/Vite-8.3-646CFF?style=flat-square&logo=vite&logoColor=white"/> | Blazing-fast development server & optimized ESM production bundling |
+| **Styling** | <img src="https://img.shields.io/badge/CSS3-Vanilla%20System-1572B6?style=flat-square&logo=css3&logoColor=white"/> | Tailored Neo-Brutalist clean design system, variables, and responsive media rules |
+| **Icons** | <img src="https://img.shields.io/badge/Lucide-Icons-F56565?style=flat-square&logo=lucide&logoColor=white"/> | Lightweight, razor-sharp icon set |
+| **Vector Graphics** | <img src="https://img.shields.io/badge/SVG-Handcrafted-FFB13B?style=flat-square&logo=svg&logoColor=black"/> | 100% self-contained pure SVG doodle characters with zero HTTP asset overhead |
+| **Audio Synthesis** | <img src="https://img.shields.io/badge/Web%20Audio-API-000000?style=flat-square"/> | Synthesized audio tones for chimes, pops, and match notifications |
+| **Mobile App** | <img src="https://img.shields.io/badge/PWA-Service%20Worker-5A0FC8?style=flat-square&logo=pwa&logoColor=white"/> | Standalone mobile installability with background cache |
 
-    DC --> GP
-    GP --> CHK
-    CHK -- Yes --> YES --> RESTORE
-    CHK -- No --> NO --> NOTIFY
-```
-
----
-
-### Event-Driven Service Communication
-
-```mermaid
-flowchart TD
-    subgraph EVENTS["Domain Events — contracts/events.json"]
-        UR["UserRegistered"]
-        UD["UserDeleted"]
-        MC["MatchCreated"]
-        STS["SessionStarted"]
-        STE["SessionEnded"]
-        UDIS["UserDisconnected"]
-        UREC["UserReconnected"]
-        RF["ReportFiled"]
-        BA["BlockAdded"]
-        USP["UserSuspended"]
-        UBN["UserBanned"]
-    end
-
-    ID_SVC["IdentityService"] -->|publishes| UR
-    ID_SVC -->|publishes| UD
-    MM_SVC["MatchmakingService"] -->|publishes| MC
-    SM_SVC["SessionService"] -->|publishes| STS
-    SM_SVC -->|publishes| STE
-    RG_SVC["RealtimeGateway"] -->|publishes| UDIS
-    RG_SVC -->|publishes| UREC
-    SA_SVC["SafetyService"] -->|publishes| RF
-    SA_SVC -->|publishes| BA
-    MOD_SVC["ModerationService"] -->|publishes| USP
-    MOD_SVC -->|publishes| UBN
-
-    MC -->|consumed by| RG_SVC
-    STE -->|consumed by| SA_SVC
-    RF -->|consumed by| MOD_SVC
-    BA -->|consumed by| MM_SVC
-    USP -->|consumed by| ID_SVC
-    UBN -->|consumed by| MM_SVC
-```
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-
-| Technology | Version | Purpose |
-|---|---|---|
-| [React](https://react.dev/) | `^19.3.1` | UI component framework |
-| [Vite](https://vitejs.dev/) | `^8.3.4` | Build toolchain & dev server |
-| [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react) | `^6.1.2` | Fast Refresh & JSX transform |
-| [Lucide React](https://lucide.dev/) | `^1.59.0` | Icon library |
-| [WebRTC API](https://webrtc.org/) | Native | P2P video/audio/data channels |
-| Vanilla CSS | — | Styling & animations |
-| [OxLint](https://oxc.rs/docs/guide/usage/linter.html) | `^1.88.0` | Ultra-fast JavaScript linter |
-
-### Backend
-
-| Technology | Version | Purpose |
-|---|---|---|
-| [Node.js](https://nodejs.org/) | `24.x` | JavaScript runtime |
-| [Express](https://expressjs.com/) | `^4.21.2` | REST API gateway |
-| [ws](https://github.com/websockets/ws) | `^8.18.0` | WebSocket server for signaling |
-| [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) | `^9.0.2` | JWT access & refresh tokens |
-| [bcryptjs](https://github.com/dcodeIO/bcrypt.js) | `^2.4.3` | Password hashing |
-| [cors](https://github.com/expressjs/cors) | `^2.8.5` | Cross-Origin Resource Sharing |
-| [dotenv](https://github.com/motdotla/dotenv) | `^16.4.7` | Environment variable management |
-
-### Infrastructure & DevOps
-
-| Technology | Version | Purpose |
-|---|---|---|
-| [Docker](https://www.docker.com/) | Latest | Container runtime |
-| [Docker Compose](https://docs.docker.com/compose/) | `3.8` | Multi-service orchestration |
-| [Redis](https://redis.io/) | `7-alpine` | Matchmaking queue store |
-| [PostgreSQL](https://www.postgresql.org/) | `16-alpine` | Persistent identity & safety records |
-| [Google STUN](https://webrtc.org/) | — | ICE candidate discovery |
-| [concurrently](https://github.com/open-cli-tools/concurrently) | `^9.1.2` | Parallel dev server scripts |
+### Backend Architecture
+| Layer | Technology | Description |
+|:---|:---|:---|
+| **Runtime** | <img src="https://img.shields.io/badge/Node.js-24.x-339933?style=flat-square&logo=node.js&logoColor=white"/> | High-performance asynchronous JavaScript server runtime |
+| **Web Server** | <img src="https://img.shields.io/badge/Express-4.21-000000?style=flat-square&logo=express&logoColor=white"/> | RESTful API gateway handling auth, presence telemetry, and reports |
+| **Realtime Gateway** | <img src="https://img.shields.io/badge/WebSocket-ws-010101?style=flat-square&logo=socketdotio&logoColor=white"/> | Low-latency WebRTC signaling, queues, and chat routing |
+| **Signaling & Relay** | <img src="https://img.shields.io/badge/WebRTC-STUN%20Relay-FF5722?style=flat-square&logo=webrtc&logoColor=white"/> | Session Description Protocol (SDP) and ICE candidate forwarder |
+| **Security & Auth** | <img src="https://img.shields.io/badge/JWT-Tokens-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"/> | JSON Web Tokens with refresh-token rotation and Bcrypt password hashing |
+| **Persistence (Optional)** | <img src="https://img.shields.io/badge/Redis-7.x-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/PostgreSQL-16.x-336791?style=flat-square&logo=postgresql&logoColor=white"/> | Distributed queuing and persistent data stores with in-memory fallbacks |
 
 ---
 
@@ -344,133 +217,43 @@ flowchart TD
 
 ```
 P-Omegle/
+├── client/                     # Frontend Application (React 19 + Vite)
+│   ├── public/
+│   │   ├── chat-doodle-bg.jpg  # Subtle repeat background texture
+│   │   ├── favicon.svg         # Handcrafted doodle camera brand favicon
+│   │   ├── manifest.json       # Progressive Web App manifest
+│   │   └── sw.js               # Service Worker for PWA caching
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── chat/           # InCallChatDrawer & EmojiPicker
+│   │   │   ├── doodles/        # DoodleCharacter.jsx (Avatar heads & logo SVGs)
+│   │   │   ├── layout/         # Top Navbar with live unread indicators
+│   │   │   ├── lobby/          # LobbyScreen (Camera viewfinder & matching setup)
+│   │   │   ├── modals/         # UserProfileModal & DeviceSettingsModal
+│   │   │   ├── pwa/            # InstallPwaPrompt banner
+│   │   │   └── video/          # LiveVideoStage (WebRTC dual streams)
+│   │   ├── context/            # AuthContext.jsx & ChatContext.jsx
+│   │   ├── hooks/              # useWebRTC.js (Signaling & peer connection lifecycle)
+│   │   ├── services/           # api.js & soundEffects.js
+│   │   └── styles/             # index.css (Unified Neo-Brutalist Design System)
+│   └── index.html              # HTML5 entry with PWA headers & SEO metadata
 │
-├── 📄 package.json                  # Root workspace scripts & devDeps (concurrently)
-├── 📄 docker-compose.yml            # Multi-service Docker orchestration
-├── 📄 .env.example                  # Root environment variable template
-├── 📄 .gitignore                    # Git ignore rules
+├── server/                     # Backend Application (Node.js + Express + WS)
+│   ├── config/                 # env.js configuration loader
+│   ├── middleware/             # auth.js, rateLimiter.js
+│   ├── models/                 # User.js, Report.js, Session.js
+│   ├── routes/                 # auth.js, match.js, moderation.js
+│   ├── services/               # Microservices
+│   │   ├── identityService.js  # Account authentication & guest tokens
+│   │   ├── matchmakingEngine.js# Weighted interest matchmaking queue
+│   │   ├── sessionManager.js   # Room lifecycle & 15s grace period restore
+│   │   ├── signalingRelay.js   # WebRTC SDP/ICE candidate forwarder
+│   │   └── safetyManager.js    # Per-IP rate limiting, reporting, and bans
+│   └── server.js               # Express app & WebSocket server initialization
 │
-├── 📂 contracts/                    # Shared event & API contracts
-│   ├── 📄 events.json               # Domain event registry (publisher → consumers)
-│   └── 📂 proto/                    # Protobuf schemas (future gRPC)
-│
-├── 📂 docker/                       # Dockerfiles for each service
-│   ├── 📄 Dockerfile.server         # Node.js 24 Alpine image for backend
-│   └── 📄 Dockerfile.client         # Nginx-served production client
-│
-├── 📂 server/                       # Backend — Node.js Microservice
-│   ├── 📄 package.json              # Server dependencies (express, ws, jwt, bcrypt)
-│   ├── 📄 .env.example              # Server-specific env template
-│   ├── 📄 test-e2e.js               # End-to-end integration test script
-│   └── 📂 src/
-│       ├── 📄 server.js             # Entry point — HTTP + WebSocket bootstrapper
-│       │
-│       ├── 📂 config/               # Configuration loaders
-│       │   ├── 📄 env.js            # Typed env config with defaults & validation
-│       │   └── 📄 iceServers.js     # STUN/TURN server configuration builder
-│       │
-│       ├── 📂 gateway/              # Protocol gateways
-│       │   ├── 📄 apiGateway.js     # Express REST router (auth, moderation, TURN API)
-│       │   └── 📄 realtimeGateway.js# WebSocket server — message dispatch & session fanout
-│       │
-│       ├── 📂 middleware/           # Express middleware chain
-│       │   ├── 📄 authMiddleware.js  # JWT verification guard
-│       │   └── 📄 rateLimiter.js    # IP-based sliding window rate limiter
-│       │
-│       ├── 📂 store/                # Data layer
-│       │   └── 📄 memoryStore.js    # In-process Map store (falls back from Redis/PG)
-│       │
-│       └── 📂 services/             # Discrete domain services
-│           ├── 📂 identity/         # User auth & account management
-│           │   ├── 📄 identityService.js  # Register, login, delete account
-│           │   └── 📄 tokenUtils.js       # JWT sign / verify helpers
-│           │
-│           ├── 📂 matchmaking/      # Peer pairing engine
-│           │   └── 📄 matchmakingEngine.js# Interest-weighted queue processing
-│           │
-│           ├── 📂 session/          # Active chat session lifecycle
-│           │   └── 📄 sessionManager.js   # Create, skip, heartbeat, grace period
-│           │
-│           ├── 📂 signaling/        # WebRTC message relay
-│           │   └── 📄 signalingRelay.js   # Validate & forward offer/answer/ICE
-│           │
-│           ├── 📂 presence/         # Online status tracking
-│           │   └── 📄 presenceTracker.js  # Register / unregister socket presence
-│           │
-│           ├── 📂 safety/           # Report & block system
-│           │   └── 📄 safetyManager.js    # File reports, manage block list
-│           │
-│           ├── 📂 moderation/       # Admin enforcement
-│           │   └── 📄 moderationService.js# Suspend & ban offending accounts
-│           │
-│           └── 📂 turn/             # TURN credential vending
-│               └── 📄 turnService.js      # Time-limited TURN token generation
-│
-└── 📂 client/                       # Frontend — React 19 SPA
-    ├── 📄 package.json              # Client deps (react, vite, lucide-react)
-    ├── 📄 vite.config.js            # Vite config with React plugin
-    ├── 📄 index.html                # HTML shell & meta tags
-    ├── 📄 .env.example              # Client-side env template (VITE_*)
-    │
-    └── 📂 src/
-        ├── 📄 main.jsx              # React 19 root mount with StrictMode
-        ├── 📄 App.jsx               # Root component — view router (lobby / call)
-        ├── 📄 App.css               # App-level layout styles
-        ├── 📄 index.css             # CSS reset & root variables
-        │
-        ├── 📂 context/              # React context providers
-        │   ├── 📄 AuthContext.jsx   # Auth state (user, token, login/logout/register)
-        │   └── 📄 ChatContext.jsx   # Chat state (view, mode, session, messages)
-        │
-        ├── 📂 hooks/               # Custom React hooks
-        │   └── 📄 useWebRTC.js     # Full WebRTC lifecycle (offer, answer, ICE, streams)
-        │
-        ├── 📂 services/            # Client-side service adapters
-        │   ├── 📄 api.js           # REST client (auth, moderation endpoints)
-        │   └── 📄 soundEffects.js  # Audio cues for match / connect events
-        │
-        ├── 📂 styles/              # Global stylesheet modules
-        │   └── 📄 index.css        # Design tokens, utility classes, animations
-        │
-        ├── 📂 assets/              # Static assets (icons, images)
-        │
-        └── 📂 components/          # Feature-based UI component tree
-            ├── 📂 layout/          # App chrome
-            │   └── Navbar.jsx      # Top navigation bar
-            │
-            ├── 📂 home/            # Landing / home screen
-            │
-            ├── 📂 lobby/           # Pre-call waiting screen
-            │   └── LobbyScreen.jsx # Mode selector, interest input, join queue
-            │
-            ├── 📂 video/           # Video call stage
-            │   ├── LiveVideoStage.jsx    # Full-screen P2P video layout
-            │   ├── VideoStage.jsx        # Reusable video grid component
-            │   └── ConvooVideoStage.jsx  # Text-mode video variant
-            │
-            ├── 📂 chat/            # Messaging components
-            │   ├── ChatBox.jsx           # Standalone text chat box
-            │   ├── ConvooChat.jsx        # Convoo (text-only) mode chat
-            │   ├── InCallChatDrawer.jsx  # Slide-out in-call chat overlay
-            │   └── ActionControls.jsx    # Skip / Report / Mute controls
-            │
-            ├── 📂 auth/            # Authentication UI
-            │   └── AuthModal.jsx         # Login / Register modal
-            │
-            ├── 📂 profile/         # User profile management
-            │   └── UserProfileModal.jsx  # Edit profile, view stats
-            │
-            ├── 📂 modals/          # Generic overlay modals
-            │   ├── ProModal.jsx          # Premium subscription upsell
-            │   └── DeviceSettingsModal.jsx # Camera / mic selector
-            │
-            ├── 📂 moderation/      # Safety tooling
-            │   ├── ModeratorDashboard.jsx # Admin: list reports, take action
-            │   └── ReportModal.jsx        # User-facing report filing form
-            │
-            ├── 📂 doodles/         # Collaborative drawing pad
-            │
-            └── 📂 common/          # Shared UI primitives
+├── docker-compose.yml          # Multi-container orchestration (App, Redis, Postgres)
+├── package.json                # Monorepo root scripts
+└── README.md                   # Project documentation
 ```
 
 ---
@@ -478,404 +261,139 @@ P-Omegle/
 ## 🚀 Getting Started
 
 ### Prerequisites
+- **Node.js**: `v18.0.0` or higher (Node 20+ or 24 LTS recommended)
+- **npm**: `v9.0.0` or higher
+- Modern Web Browser with camera/microphone access (Chrome, Edge, Firefox, Safari)
 
-Ensure the following are installed on your machine:
+### Quickstart Installation
 
-| Tool | Minimum Version | Install |
-|---|---|---|
-| **Node.js** | `v20 LTS` or `v24+` | [nodejs.org](https://nodejs.org/) |
-| **npm** | `v10+` | Bundled with Node.js |
-| **Git** | any | [git-scm.com](https://git-scm.com/) |
-| **Docker** *(optional)* | `v24+` | [docker.com](https://www.docker.com/) |
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Mausam5055/P-Omegle.git
+   cd P-Omegle
+   ```
+
+2. **Install all dependencies:**
+   ```bash
+   npm run install:all
+   ```
+
+3. **Start Development Servers:**
+   ```bash
+   npm run dev
+   ```
+   *Starts backend on port `5000` and Vite client on port `5173` concurrently.*
+
+4. **Open in your browser:**
+   ```
+   http://localhost:5173
+   ```
+   *Tip: Open a secondary incognito window to simulate two peers and test real-time P2P matching instantly!*
 
 ---
 
-### 1. Clone the Repository
+## 📡 WebSocket Event Contracts
+
+The Realtime Gateway communicates bidirectionally over `ws://localhost:5000/ws`:
+
+| Action / Event | Direction | Payload Example | Description |
+|:---|:---:|:---|:---|
+| `join_queue` | Client ➔ Server | `{ "mode": "video", "interests": ["tech"] }` | Enters matchmaking pool |
+| `queued` | Server ➔ Client | `{ "status": "searching" }` | Confirms client is queued |
+| `matched` | Server ➔ Client | `{ "sessionId": "uuid", "role": "initiator" }` | Signals successful pair |
+| `offer` / `answer` | Client ⇄ Server | `{ "sdp": "...", "sessionId": "uuid" }` | WebRTC session negotiation |
+| `ice_candidate` | Client ⇄ Server | `{ "candidate": "...", "sessionId": "uuid" }` | P2P network traversal candidate |
+| `chat_message` | Client ⇄ Server | `{ "payload": { "text": "Hello!" } }` | Live ephemeral text chat |
+| `typing_status` | Client ⇄ Server | `{ "payload": { "isTyping": true } }` | Updates typing state |
+| `partner_left` | Server ➔ Client | `{ "reason": "Stranger left conversation." }` | Signals partner disconnection |
+| `heartbeat` | Client ➔ Server | `{ "payload": { "sessionId": "uuid" } }` | 15s keep-alive ping |
+
+---
+
+## 📦 Extended Technical Documentation
+
+Click each section below to expand detailed documentation:
+
+<details>
+<summary><b>🛡️ Security, Privacy & Compliance</b></summary>
+<br/>
+
+### Data Privacy Principles
+- **Ephemeral Media Streams**: Video and audio data are strictly peer-to-peer. No video packets are ever routed through, stored, or processed on the server.
+- **P2P Encryption**: Built on WebRTC standard DTLS (Datagram Transport Layer Security) and SRTP (Secure Real-time Transport Protocol).
+- **Ephemeral Text Messages**: Chat messages exist only in client memory during the call. They are completely flushed upon skipping or ending the session.
+- **Zero Tracker Footprint**: No third-party ad pixels, analytics trackers, or social sharing SDKs.
+
+### Responsible Disclosure
+If you find a security vulnerability, please submit it via [GitHub Security Advisories](https://github.com/Mausam5055/P-Omegle/security/advisories/new) rather than opening a public issue. Critical disclosures receive response and remediation within 48 hours.
+
+</details>
+
+<details>
+<summary><b>🐳 Docker & Production Deployment</b></summary>
+<br/>
+
+### Running with Docker Compose
+The project includes a ready-to-use Docker configuration including backend, frontend reverse proxy, Redis, and PostgreSQL:
 
 ```bash
-git clone https://github.com/Mausam5055/P-Omegle.git
-cd P-Omegle
+# Build and launch the containerized cluster
+docker-compose up --build -d
+
+# Check cluster logs
+docker-compose logs -f
 ```
 
----
+### Production Checklist
+1. **SSL Termination**: Always host over HTTPS and WSS (WebRTC requires a secure context to access camera and microphone).
+2. **STUN/TURN Configuration**: Supply production TURN credentials in `.env` (`TURN_SERVER_URL`, `TURN_USERNAME`, `TURN_CREDENTIAL`) to guarantee connections behind restrictive corporate firewalls and symmetric NATs.
+3. **CORS Whitelist**: Restrict `ALLOWED_ORIGINS` to your production domain.
 
-### 2. Install Dependencies
+</details>
 
-The project uses **npm workspaces**. A single command installs all packages for both `server` and `client`:
+<details>
+<summary><b>⚙️ Environment Variables Reference</b></summary>
+<br/>
 
-```bash
-npm run install:all
-```
-
-This is equivalent to:
-
-```bash
-npm install                         # Root (concurrently)
-npm install --prefix server        # Backend (express, ws, jwt, bcrypt...)
-npm install --prefix client        # Frontend (react, vite, lucide-react...)
-```
-
----
-
-### 3. Configure Environment Variables
-
-Copy the example files and fill in your values:
-
-```bash
-# Root-level (shared reference)
-cp .env.example .env
-
-# Server-specific
-cp server/.env.example server/.env
-
-# Client-specific
-cp client/.env.example client/.env
-```
-
-> See the [Environment Variables](#-environment-variables) section for all available keys and descriptions.
-
----
-
-### 4. Run in Development Mode
-
-Start the backend and frontend **concurrently** with one command from the project root:
-
-```bash
-npm run dev
-```
-
-This internally runs:
-
-| Process | Command | URL |
-|---|---|---|
-| **Server** | `node --watch src/server.js` | `http://localhost:5000` |
-| **Client** | `vite` | `http://localhost:5173` |
-| **WebSocket** | Auto-started with server | `ws://localhost:5000/ws` |
-| **Health Check** | — | `http://localhost:5000/health` |
-
-Or run them individually in separate terminals:
-
-```bash
-# Terminal 1 — Backend
-npm run dev:server
-
-# Terminal 2 — Frontend
-npm run dev:client
-```
-
----
-
-### 5. Open in Browser
-
-Navigate to **[http://localhost:5173](http://localhost:5173)** to use the application.
-
----
-
-## 🐳 Docker Deployment
-
-The project ships with a complete `docker-compose.yml` that spins up all four services:
-
-| Service | Image | Port | Description |
-|---|---|---|---|
-| `server` | `docker/Dockerfile.server` | `5000` | Node.js backend + WebSocket |
-| `client` | `docker/Dockerfile.client` | `80` | Nginx-served React SPA |
-| `redis` | `redis:7-alpine` | `6379` | Matchmaking queue store |
-| `postgres` | `postgres:16-alpine` | `5432` | Identity & safety DB |
-
-### 🔨 Common Docker Commands
-
-| Action | Command |
-|---|---|
-| 🏗️ **Build & start all** | `docker-compose up --build` |
-| 🚀 **Start in background** | `docker-compose up -d --build` |
-| 📋 **Tail all logs** | `docker-compose logs -f` |
-| ⚙️ **Tail server logs** | `docker-compose logs -f server` |
-| 🌐 **Tail client logs** | `docker-compose logs -f client` |
-| 🛑 **Stop all services** | `docker-compose down` |
-| 🗑️ **Stop & remove volumes** | `docker-compose down -v` |
-
----
-
-## ⚙️ Environment Variables
-
-### Root / Server Variables (`.env` / `server/.env`)
-
-| Variable | Default | Required | Description |
-|---|---|---|---|
-| `NODE_ENV` | `development` | ✅ | Runtime environment (`development` / `production`) |
-| `PORT` | `5000` | ✅ | HTTP server port |
-| `HOST` | `0.0.0.0` | — | Bind address |
-| `CLIENT_ORIGIN` | `http://localhost:5173` | ✅ | Primary CORS-allowed origin |
-| `ALLOWED_ORIGINS` | `...localhost...` | — | Comma-separated additional allowed origins |
-| `JWT_SECRET` | *(change me!)* | ✅ | Secret key for signing access tokens |
-| `JWT_EXPIRES_IN` | `24h` | — | Access token TTL |
-| `REFRESH_TOKEN_SECRET` | *(change me!)* | ✅ | Secret key for signing refresh tokens |
-| `REFRESH_TOKEN_EXPIRES_IN` | `7d` | — | Refresh token TTL |
-| `MATCHMAKING_INTEREST_TIMEOUT_MS` | `5000` | — | Time before interest-strict match relaxes |
-| `MATCHMAKING_COOLDOWN_MS` | `15000` | — | Cooldown between skip and re-queue |
-| `SESSION_GRACE_PERIOD_MS` | `15000` | — | Reconnection window after socket drop |
-| `HEARTBEAT_INTERVAL_MS` | `10000` | — | Client heartbeat ping frequency |
-| `RATE_LIMIT_WINDOW_MS` | `60000` | — | Rate limiter sliding window (ms) |
-| `RATE_LIMIT_MAX_REQUESTS` | `120` | — | Max requests per window per IP |
-| `REDIS_URL` | `redis://localhost:6379` | — | Redis connection string (optional) |
-| `DATABASE_URL` | `postgresql://...` | — | PostgreSQL connection string (optional) |
-| `STUN_SERVERS` | Google STUN | — | Comma-separated STUN URIs |
-| `TURN_SERVER_URL` | *(empty)* | — | TURN server URI (production recommended) |
-| `TURN_SERVER_USERNAME` | *(empty)* | — | TURN credential username |
-| `TURN_SERVER_CREDENTIAL` | *(empty)* | — | TURN credential secret |
-
-### Client Variables (`client/.env`)
+Create a `.env` file in the `server/` directory:
 
 | Variable | Default | Description |
-|---|---|---|
-| `VITE_SERVER_URL` | `http://localhost:5000` | Backend REST API base URL |
-| `VITE_WS_URL` | `ws://localhost:5000/ws` | WebSocket signaling endpoint |
+|:---|:---|:---|
+| `PORT` | `5000` | Port for the Express REST and WebSocket server |
+| `NODE_ENV` | `development` | Runtime mode (`development` or `production`) |
+| `JWT_SECRET` | `omegle-insecure-dev-secret` | 256-bit secret used to sign JWT access tokens |
+| `REFRESH_TOKEN_SECRET` | `omegle-insecure-refresh-secret`| Secret used to sign long-lived refresh tokens |
+| `ALLOWED_ORIGINS` | `http://localhost:5173` | Comma-separated list of allowed CORS domains |
+| `REDIS_URL` | *empty (in-memory)* | Optional Redis connection string for multi-server clustering |
+| `DATABASE_URL` | *empty (in-memory)* | Optional PostgreSQL connection string |
+| `TURN_SERVER_URL` | *empty* | Optional custom coturn or Twilio TURN server URL |
 
-> **Security Note:** Never commit `.env` files containing real secrets. The `.gitignore` already excludes them. Always rotate `JWT_SECRET` and `REFRESH_TOKEN_SECRET` in production.
+</details>
 
----
+<details>
+<summary><b>🤝 Contributing Guidelines</b></summary>
+<br/>
 
-## 📡 API Reference
+Contributions are welcome! Please follow these standards:
 
-### REST Endpoints (`/api`)
+1. **Fork the Repository** and create a feature branch (`git checkout -b feat/my-new-feature`).
+2. **Adhere to Code Guidelines**:
+   - Use ES Modules (`import`/`export`) exclusively.
+   - Maintain clean CSS tokens and the black-ink doodle design language.
+   - Run `npm run build` in `client` before committing to ensure zero compilation or bundling errors.
+3. **Commit using Conventional Commits** (`feat:`, `fix:`, `docs:`, `perf:`).
+4. **Submit a Pull Request** describing your changes and testing evidence.
 
-All protected routes require the `Authorization: Bearer <token>` header.
+</details>
 
-#### Authentication & Identity
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `POST` | `/api/auth/register` | Public | Create a new account |
-| `POST` | `/api/auth/login` | Public | Authenticate and receive tokens |
-| `POST` | `/api/auth/refresh` | Public | Exchange refresh token for new access token |
-| `DELETE` | `/api/auth/account` | Required | Delete user account and purge data |
-
-#### TURN Credentials
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/api/turn/credentials` | Optional | Fetch time-limited TURN tokens for ICE |
-
-#### Safety & Moderation
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `POST` | `/api/safety/report` | Required | File a report against a user |
-| `POST` | `/api/safety/block` | Required | Block a user from future matches |
-| `GET` | `/api/moderation/reports` | Moderator | List all pending reports |
-| `POST` | `/api/moderation/suspend` | Moderator | Suspend an offending user |
-| `POST` | `/api/moderation/ban` | Moderator | Permanently ban a user |
-
-#### Health
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/health` | Public | Server health status & uptime |
-
----
-
-## 🔌 WebSocket Events
-
-Connect via `ws://localhost:5000/ws?token=<JWT>` (token is optional for guests).
-
-### Client → Server (Actions)
-
-| Action | Payload | Description |
-|---|---|---|
-| `join_queue` | `{ mode, interests[], language }` | Enter the matchmaking queue |
-| `leave_queue` | `{}` | Exit the queue without starting a session |
-| `skip` | `{ sessionId, autoRequeue, mode, interests[], language }` | End session, optionally re-queue |
-| `offer` | `{ sessionId, sdp }` | Send WebRTC offer SDP to partner |
-| `answer` | `{ sessionId, sdp }` | Send WebRTC answer SDP to partner |
-| `ice_candidate` | `{ sessionId, candidate }` | Forward ICE candidate to partner |
-| `chat_message` | `{ sessionId, text }` | Send in-session text message |
-| `typing_start` | `{ sessionId }` | Notify partner typing has begun |
-| `typing_stop` | `{ sessionId }` | Notify partner typing has stopped |
-| `heartbeat` | `{ sessionId? }` | Keep connection & session alive |
-
-### Server → Client (Events)
-
-| Event | Data | Description |
-|---|---|---|
-| `connected` | `{ userId, socketId, isGuest }` | Connection acknowledgement |
-| `queued` | `{ mode, interests, estimatedWaitMs }` | Confirmed in the matchmaking queue |
-| `queue_left` | `{}` | Confirmed queue exit |
-| `matched` | `{ sessionId, role, mode, sharedInterests, partnerId }` | Paired with a stranger |
-| `session_restored` | `{ sessionId, partnerId }` | Session resumed after reconnect |
-| `session_ended` | `{ sessionId, skipped }` | Current session has ended |
-| `partner_left` | `{ sessionId, reason }` | Partner disconnected or skipped |
-| `partner_reconnected` | `{ sessionId }` | Dropped partner has reconnected |
-| `offer` | `{ sdp, ... }` | Forwarded WebRTC offer from partner |
-| `answer` | `{ sdp, ... }` | Forwarded WebRTC answer from partner |
-| `ice_candidate` | `{ candidate, ... }` | Forwarded ICE candidate from partner |
-| `chat_message` | `{ text, senderId }` | Incoming message from partner |
-| `typing_start` | `{ senderId }` | Partner started typing |
-| `typing_stop` | `{ senderId }` | Partner stopped typing |
-| `heartbeat_ack` | `{ timestamp }` | Server heartbeat acknowledgement |
-| `error` | `{ message }` | Protocol or validation error |
-
----
-
-## 🧪 Testing
-
-### End-to-End Integration Test
-
-A standalone E2E test script is included at `server/test-e2e.js`. It simulates two WebSocket clients going through the full flow: connect → queue → match → signaling → skip.
-
-```bash
-# Make sure the server is running first
-npm run dev:server
-
-# In another terminal
-node server/test-e2e.js
-```
-
-### Linting (Frontend)
-
-```bash
-# Run OxLint on client source
-npm run lint --prefix client
-```
-
-### Manual Health Check
-
-```bash
-curl http://localhost:5000/health
-# Response: { "status": "healthy", "timestamp": "...", "uptime": 42 }
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are warmly welcome! Whether it's bug fixes, new features, documentation improvements, or UI polish — all PRs are appreciated.
-
-### 🪜 Contribution Steps
-
-| Step | Action | Command / Notes |
-|---|---|---|
-| 1️⃣ | **Fork** the repository | Click **Fork** on GitHub |
-| 2️⃣ | **Clone** your fork | `git clone https://github.com/<you>/P-Omegle.git` |
-| 3️⃣ | **Create a feature branch** | `git checkout -b feat/your-feature-name` |
-| 4️⃣ | **Install dependencies** | `npm run install:all` |
-| 5️⃣ | **Make your changes** | Follow the code style guidelines below |
-| 6️⃣ | **Test** thoroughly | Run E2E test & lint before committing |
-| 7️⃣ | **Commit** | `git commit -m "feat(scope): description"` |
-| 8️⃣ | **Push & open PR** | `git push origin feat/your-feature-name` |
-
----
-
-### Commit Message Convention
-
-We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
-
-| Prefix | When to Use |
-|---|---|
-| `feat:` | A new feature |
-| `fix:` | A bug fix |
-| `docs:` | Documentation changes |
-| `style:` | Code formatting (no logic change) |
-| `refactor:` | Code restructuring (no feature/fix) |
-| `test:` | Adding or updating tests |
-| `chore:` | Build process or tooling changes |
-| `perf:` | Performance improvements |
-
----
-
-### 🎨 Code Style Guidelines
-
-| Area | Rule |
-|---|---|
-| **Module System** | ES Modules (`import` / `export`) only — no CommonJS |
-| **Frontend Components** | Functional components only; hooks for all stateful logic |
-| **Linting** | Run `npm run lint --prefix client` — zero OxLint errors before pushing |
-| **Naming Convention** | `camelCase` for variables/functions · `PascalCase` for components/classes |
-| **Service Boundaries** | Each service owns one domain — no cross-domain logic (e.g. no auth in matchmaking) |
-| **Secrets** | Never hard-code — always use `config/env.js` on the server |
-| **Documentation** | Prefer self-documenting code · add JSDoc for all public service APIs |
-
----
-
-### 🐛 Reporting Bugs
-
-Please open a [GitHub Issue](https://github.com/Mausam5055/P-Omegle/issues) and include:
-
-| Field | What to Provide |
-|---|---|
-| **Title** | Clear, descriptive one-liner |
-| **Steps to Reproduce** | Numbered step-by-step instructions |
-| **Expected vs. Actual** | What you expected to happen vs. what did happen |
-| **Environment** | OS, Node.js version, browser & version |
-| **Evidence** | Relevant logs, error messages, or screenshots |
-
----
-
-### 💡 Suggesting Features
-
-Open a [GitHub Discussion](https://github.com/Mausam5055/P-Omegle/discussions) or an Issue labeled `enhancement` and include:
-
-| Field | What to Provide |
-|---|---|
-| **Problem** | Description of the problem the feature solves |
-| **Proposed Solution** | Your suggested implementation approach |
-| **Alternatives** | Any alternative solutions you considered |
-
----
-
-## 🗺️ Roadmap
-
-| Status | Feature |
-|---|---|
-| ✅ Done | P2P WebRTC video & text chat |
-| ✅ Done | Interest-based matchmaking |
-| ✅ Done | JWT authentication & guest mode |
-| ✅ Done | Report / block / moderation system |
-| ✅ Done | 15-second reconnection grace period |
-| ✅ Done | Docker Compose multi-service stack |
-| 🔄 In Progress | Redis-backed persistent matchmaking queues |
-| 🔄 In Progress | PostgreSQL schema & ORM integration |
-| 📋 Planned | End-to-end encryption for chat messages |
-| 📋 Planned | Country / region-based geo-matching |
-| 📋 Planned | AI-powered content moderation |
-| 📋 Planned | Mobile PWA support |
-| 📋 Planned | Collaborative doodle pad (WebSocket canvas sync) |
-| 📋 Planned | gRPC inter-service communication (protobuf contracts) |
-| 📋 Planned | Horizontal scaling with Redis Pub/Sub fan-out |
-
----
-
-## 🔒 Security
-
-We take security seriously. If you discover a vulnerability, please **do not open a public issue**.
-
-### 📬 Responsible Disclosure
-
-| Channel | Details |
-|---|---|
-| ✉️ **Email** | Contact the maintainers (see `package.json` author field) |
-| 🔐 **GitHub Advisory** | [Open a Security Advisory](https://github.com/Mausam5055/P-Omegle/security/advisories/new) |
-| ⏱️ **Response SLA** | Acknowledgement within **48 hours** · critical patches within **7 days** |
-
-### ✅ Production Security Checklist
-
-| # | Action | Variable / Tool |
-|---|---|---|
-| 1 | Set strong random JWT secrets | `JWT_SECRET` · `REFRESH_TOKEN_SECRET` |
-| 2 | Restrict allowed origins | `ALLOWED_ORIGINS` |
-| 3 | Configure a production TURN server | `TURN_SERVER_URL` · credentials |
-| 4 | Enforce HTTPS / WSS | Nginx · Caddy · Cloudflare Tunnel |
-| 5 | Set production runtime flag | `NODE_ENV=production` |
-| 6 | Enable data persistence & backups | Redis AOF · PostgreSQL pg_dump |
-| 7 | Tighten rate limiter | `RATE_LIMIT_MAX_REQUESTS` · `RATE_LIMIT_WINDOW_MS` |
-
----
-
-## 📄 License
+<details>
+<summary><b>📄 MIT License</b></summary>
+<br/>
 
 ```
 MIT License
 
-Copyright (c) 2026 P-Omegle Team
+Copyright (c) 2026 O P Omegle Team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -896,27 +414,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
----
-
-## 🙏 Acknowledgements
-
-| Project | Role in P-Omegle |
-|---|---|
-| [WebRTC.org](https://webrtc.org/) | The open standard powering all P2P media communication |
-| [ws](https://github.com/websockets/ws) | Blazing-fast WebSocket server for Node.js signaling |
-| [Lucide React](https://lucide.dev/) | Beautiful, consistent open-source icon library |
-| [Vite](https://vitejs.dev/) | Next-generation build tooling and dev server |
-| [OxLint](https://oxc.rs/) | The fastest JavaScript linter, written in Rust |
+</details>
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by the P-Omegle Team**
+**Built with ❤️ for privacy, open connectivity, and playful design.**
 
 <p>
   <a href="https://github.com/Mausam5055/P-Omegle/issues">🐛 Report Bug</a> •
-  <a href="https://github.com/Mausam5055/P-Omegle/issues">✨ Request Feature</a> •
+  <a href="https://github.com/Mausam5055/P-Omegle/issues">💡 Request Feature</a> •
   <a href="https://github.com/Mausam5055/P-Omegle/discussions">💬 Discussions</a>
 </p>
 
